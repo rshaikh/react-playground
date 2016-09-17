@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import {Link} from 'react-router';
 
 export default class Layout extends React.Component {
 
@@ -17,6 +18,9 @@ export default class Layout extends React.Component {
     render() {
         return (
             <div>
+                <Link to="/about">About</Link>
+                <Link to="/repos">Repos</Link>
+
                 <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
             </div>
 
