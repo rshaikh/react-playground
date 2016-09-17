@@ -19,7 +19,7 @@ export default class Layout extends React.Component {
         return (
             <div>
                 <Link to="/about">About</Link>
-                <Link to="/repos">Repos</Link>
+                <Link to="/repos/userName/repositoryName">Repos</Link>
 
                 <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
 
