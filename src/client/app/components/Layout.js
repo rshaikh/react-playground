@@ -22,8 +22,9 @@ export default class Layout extends React.Component {
                 <Link to="/repos">Repos</Link>
 
                 <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
-            </div>
 
+                {this.props.children}
+            </div>
         );
     }
 }
